@@ -1,29 +1,43 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "xxxexample.fhir.uv.myig",
+  "id": "ihe.mpd",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>xxxYourComputableMyIGNameHere</h2><p>The official URL for this implementation guide is: </p><pre>xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>xxxA brief description of what this IG is about</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IHE_MPD</h2><p>The official URL for this implementation guide is: </p><pre>http://profiles.ihe.net/PHARM/ihe.pharm.mpd/ImplementationGuide/ihe.mpd</pre><div><p>ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery</p>\n</div></div>"
   },
-  "url": "xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
-  "version": "0.1.0-test",
-  "name": "xxxYourComputableMyIGNameHere",
-  "title": "xxxYour User Friendly Name for MyIG Here",
-  "status": "draft",
-  "experimental": false,
-  "date": "2021-09-03T13:01:38+00:00",
-  "publisher": "xxxYour Work Group",
+  "url": "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/ImplementationGuide/ihe.mpd",
+  "version": "0.1.0",
+  "name": "IHE_MPD",
+  "title": "Medication Prescription and Delivery (MPD)",
+  "status": "active",
+  "date": "2021-09-03T15:29:56+00:00",
+  "publisher": "Integrating the Healthcare Enterprise (IHE)",
   "contact": [
     {
+      "name": "Integrating the Healthcare Enterprise (IHE)",
       "telecom": [
         {
           "system": "url",
-          "value": "xxxhttp://hl7.org/Special/committees/[something]"
+          "value": "http://ihe.net"
+        },
+        {
+          "system": "email",
+          "value": "secretary@ihe.net"
+        }
+      ]
+    },
+    {
+      "name": "Jose Costa Teixeira",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "jose.a.teixeira@gmail.com",
+          "use": "work"
         }
       ]
     }
   ],
-  "description": "xxxA brief description of what this IG is about ",
+  "description": "ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery",
   "jurisdiction": [
     {
       "coding": [
@@ -34,8 +48,9 @@
       ]
     }
   ],
-  "packageId": "xxxexample.fhir.uv.myig",
-  "license": "CC0-1.0",
+  "copyright": "IHE http://www.ihe.net/Governance/#Intellectual_Property",
+  "packageId": "ihe.pharm.mpd",
+  "license": "CC-BY-SA-4.0",
   "fhirVersion": [
     "4.0.1"
   ],
@@ -49,7 +64,7 @@
           },
           {
             "url": "value",
-            "valueString": "2019+"
+            "valueString": "2021+"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -62,7 +77,7 @@
           },
           {
             "url": "value",
-            "valueString": "CI Build"
+            "valueString": "ci-build"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -71,11 +86,11 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "path-binary"
+            "valueString": "apply-contact"
           },
           {
             "url": "value",
-            "valueString": "input\\cql"
+            "valueString": "true"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -84,11 +99,37 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "path-liquid"
+            "valueString": "apply-jurisdiction"
           },
           {
             "url": "value",
-            "valueString": "templates\\liquid"
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-version"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "usage-stats-opt-out"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -192,7 +233,7 @@
           },
           {
             "url": "value",
-            "valueString": "xxxhttp://somewhere.org/fhir/uv/myig/history.html"
+            "valueString": "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -227,19 +268,6 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "apply-contact"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
             "valueString": "apply-context"
           },
           {
@@ -254,19 +282,6 @@
           {
             "url": "code",
             "valueString": "apply-copyright"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-jurisdiction"
           },
           {
             "url": "value",
@@ -305,19 +320,6 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "apply-version"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
             "valueString": "active-tables"
           },
           {
@@ -335,17 +337,7 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "MyIG Home Page",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "downloads.html",
-          "title": "Useful Downloads",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "changes.html",
-          "title": "IG Change History",
+          "title": "MPD Home",
           "generation": "html"
         }
       ]
@@ -353,19 +345,27 @@
     "parameter": [
       {
         "code": "path-resource",
-        "value": "input\\history"
+        "value": "input/resources"
       },
       {
         "code": "path-resource",
-        "value": "input\\scenarios"
-      },
-      {
-        "code": "path-resource",
-        "value": "input/capabilities"
+        "value": "fsh-generated/resources"
       },
       {
         "code": "path-resource",
         "value": "input/examples"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/pagecontent"
+      },
+      {
+        "code": "path-pages",
+        "value": "fsh-generated/includes"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/capabilities"
       },
       {
         "code": "path-resource",
@@ -382,10 +382,6 @@
       {
         "code": "path-resource",
         "value": "input/profiles"
-      },
-      {
-        "code": "path-resource",
-        "value": "input/resources"
       },
       {
         "code": "path-resource",

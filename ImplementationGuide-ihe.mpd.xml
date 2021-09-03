@@ -1,34 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="xxxexample.fhir.uv.myig"/>
+  <id value="ihe.mpd"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>xxxYourComputableMyIGNameHere</h2><p>The official URL for this implementation guide is: </p><pre>xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>xxxA brief description of what this IG is about</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IHE_MPD</h2><p>The official URL for this implementation guide is: </p><pre>http://profiles.ihe.net/PHARM/ihe.pharm.mpd/ImplementationGuide/ihe.mpd</pre><div><p>ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery</p>
 </div></div>
   </text>
-  <url value="xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig"/>
-  <version value="0.1.0-test"/>
-  <name value="xxxYourComputableMyIGNameHere"/>
-  <title value="xxxYour User Friendly Name for MyIG Here"/>
-  <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2021-09-03T13:01:38+00:00"/>
-  <publisher value="xxxYour Work Group"/>
+  <url value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/ImplementationGuide/ihe.mpd"/>
+  <version value="0.1.0"/>
+  <name value="IHE_MPD"/>
+  <title value="Medication Prescription and Delivery (MPD)"/>
+  <status value="active"/>
+  <date value="2021-09-03T15:29:56+00:00"/>
+  <publisher value="Integrating the Healthcare Enterprise (IHE)"/>
   <contact>
+    <name value="Integrating the Healthcare Enterprise (IHE)"/>
     <telecom>
       <system value="url"/>
-      <value value="xxxhttp://hl7.org/Special/committees/[something]"/>
+      <value value="http://ihe.net"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="secretary@ihe.net"/>
     </telecom>
   </contact>
-  <description value="xxxA brief description of what this IG is about "/>
+  <contact>
+    <name value="Jose Costa Teixeira"/>
+    <telecom>
+      <system value="email"/>
+      <value value="jose.a.teixeira@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ImplementationGuide for IHE Pharmacy Medication Prescription and Delivery"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <packageId value="xxxexample.fhir.uv.myig"/>
-  <license value="CC0-1.0"/>
+  <copyright value="IHE http://www.ihe.net/Governance/#Intellectual_Property"/>
+  <packageId value="ihe.pharm.mpd"/>
+  <license value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -36,7 +49,7 @@
         <valueString value="copyrightyear"/>
       </extension>
       <extension url="value">
-        <valueString value="2019+"/>
+        <valueString value="2021+"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -44,23 +57,39 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="CI Build"/>
+        <valueString value="ci-build"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-binary"/>
+        <valueString value="apply-contact"/>
       </extension>
       <extension url="value">
-        <valueString value="input\cql"/>
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueString value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
-        <valueString value="templates\liquid"/>
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -124,7 +153,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="xxxhttp://somewhere.org/fhir/uv/myig/history.html"/>
+        <valueString value="http://profiles.ihe.net/PHARM/ihe.pharm.mpd/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -145,14 +174,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="apply-context"/>
       </extension>
       <extension url="value">
@@ -162,14 +183,6 @@
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueString value="apply-copyright"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -193,14 +206,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-version"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="active-tables"/>
       </extension>
       <extension url="value">
@@ -213,35 +218,33 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Useful Downloads"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="changes.html"/>
-        <title value="IG Change History"/>
+        <title value="MPD Home"/>
         <generation value="html"/>
       </page>
     </page>
     <parameter>
       <code value="path-resource"/>
-      <value value="input\history"/>
+      <value value="input/resources"/>
     </parameter>
     <parameter>
       <code value="path-resource"/>
-      <value value="input\scenarios"/>
-    </parameter>
-    <parameter>
-      <code value="path-resource"/>
-      <value value="input/capabilities"/>
+      <value value="fsh-generated/resources"/>
     </parameter>
     <parameter>
       <code value="path-resource"/>
       <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/pagecontent"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="fsh-generated/includes"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
     </parameter>
     <parameter>
       <code value="path-resource"/>
@@ -258,10 +261,6 @@
     <parameter>
       <code value="path-resource"/>
       <value value="input/profiles"/>
-    </parameter>
-    <parameter>
-      <code value="path-resource"/>
-      <value value="input/resources"/>
     </parameter>
     <parameter>
       <code value="path-resource"/>

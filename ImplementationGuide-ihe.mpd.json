@@ -10,7 +10,7 @@
   "name": "IHE_MPD",
   "title": "Medication Prescription and Delivery (MPD)",
   "status": "active",
-  "date": "2021-09-06T08:13:39+00:00",
+  "date": "2021-09-06T11:18:53+00:00",
   "publisher": "Integrating the Healthcare Enterprise (IHE)",
   "contact": [
     {
@@ -328,6 +328,64 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MedicationAdministrationHMW"
+        },
+        "name": "Logical Model for administration from HMW",
+        "description": "Logical Model for administration from HMW",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MedicationDispenseHMW"
+        },
+        "name": "Logical Model for dispense from HMW",
+        "description": "Logical Model for dispense from HMW",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MedicationOrderHMW"
+        },
+        "name": "Logical Model for medication order from HMW",
+        "description": "Logical Model for medication order from HMW",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/PharmaceuticalAdviceHMW"
+        },
+        "name": "Logical Model for Pharmaceutical Advice from HMW",
+        "description": "Logical Model for Pharmaceutical Advice from HMW",
+        "exampleBoolean": false
       }
     ],
     "page": {

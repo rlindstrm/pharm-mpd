@@ -3,9 +3,9 @@
 
 err = 4, warn = 5, info = 0
 IG Publisher Version: 1.1.79
-Generated Mon Sep 06 11:19:06 UTC 2021. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
+Generated Mon Sep 06 11:31:16 UTC 2021. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
 
- Build Errors : 36 / 1 / 0
+ Build Errors : 38 / 1 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-ihe.mpd : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicationAdministrationHMW : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispenseHMW : 1 / 1 / 1
@@ -48,8 +48,10 @@ ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalAdviceHMW.prof
 ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalAdviceHMW.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/interoperability-model.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/intro.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/useCases.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-ihe.mpd.json ==
 == fsh-generated/resources/StructureDefinition-MedicationAdministrationHMW.json ==
 ERROR: StructureDefinition/MedicationAdministrationHMW: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve

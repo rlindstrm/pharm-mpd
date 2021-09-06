@@ -10,7 +10,7 @@
   "name": "IHE_MPD",
   "title": "Medication Prescription and Delivery (MPD)",
   "status": "active",
-  "date": "2021-09-06T07:49:08+00:00",
+  "date": "2021-09-06T08:13:39+00:00",
   "publisher": "Integrating the Healthcare Enterprise (IHE)",
   "contact": [
     {
@@ -339,6 +339,11 @@
           "nameUrl": "index.html",
           "title": "MPD Home",
           "generation": "html"
+        },
+        {
+          "nameUrl": "useCases.html",
+          "title": "Use Cases",
+          "generation": "markdown"
         }
       ]
     },

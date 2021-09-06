@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "IHE_MPD"];
   fhir:ImplementationGuide.title [ fhir:value "Medication Prescription and Delivery (MPD)"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-09-06T07:49:08+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-09-06T08:13:39+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Integrating the Healthcare Enterprise (IHE)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -320,6 +320,11 @@
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "MPD Home" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "useCases.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];
      fhir:ImplementationGuide.definition.parameter [

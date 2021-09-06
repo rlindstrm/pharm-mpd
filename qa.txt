@@ -3,9 +3,9 @@
 
 err = 1, warn = 1, info = 0
 IG Publisher Version: 1.1.79
-Generated Mon Sep 06 07:49:18 UTC 2021. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
+Generated Mon Sep 06 08:13:46 UTC 2021. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
 
- Build Errors : 3 / 1 / 0
+ Build Errors : 4 / 1 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-ihe.mpd : 1 / 0 / 1
 </table>
 == n/a ==
@@ -13,5 +13,6 @@ WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be 
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/useCases.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-ihe.mpd.json ==
 ERROR: ImplementationGuide/ihe.mpd: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)

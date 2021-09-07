@@ -3,9 +3,9 @@
 
 err = 4, warn = 5, info = 0
 IG Publisher Version: 1.1.79
-Generated Tue Sep 07 08:06:03 UTC 2021. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
+Generated Tue Sep 07 08:11:43 UTC 2021. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
 
- Build Errors : 38 / 1 / 0
+ Build Errors : 36 / 1 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-ihe.mpd : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicationAdministrationHMW : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispenseHMW : 1 / 1 / 1
@@ -48,8 +48,6 @@ ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalAdviceHMW.prof
 ERROR: /github/workspace/output/StructureDefinition-PharmaceuticalAdviceHMW.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 124, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/interoperabilitymodel.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/intro.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/usecases.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-ihe.mpd.json ==

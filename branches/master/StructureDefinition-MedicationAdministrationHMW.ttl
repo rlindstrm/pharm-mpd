@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "MedicationAdministrationHMW"];
   fhir:StructureDefinition.title [ fhir:value "Logical Model for administration from HMW"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-09-07T10:23:40+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-09-07T10:30:04+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Integrating the Healthcare Enterprise (IHE)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

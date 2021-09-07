@@ -11,7 +11,7 @@
   <name value="IHE_MPD"/>
   <title value="Medication Prescription and Delivery (MPD)"/>
   <status value="active"/>
-  <date value="2021-09-07T07:47:10+00:00"/>
+  <date value="2021-09-07T07:59:49+00:00"/>
   <publisher value="Integrating the Healthcare Enterprise (IHE)"/>
   <contact>
     <name value="Integrating the Healthcare Enterprise (IHE)"/>
@@ -271,12 +271,12 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="interoperability-model.html"/>
+        <nameUrl value="interoperabilitymodel.html"/>
         <title value="Interoperability Model"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="use-cases.html"/>
+        <nameUrl value="usecases.html"/>
         <title value="Use Cases"/>
         <generation value="markdown"/>
       </page>

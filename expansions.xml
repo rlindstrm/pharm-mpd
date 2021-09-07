@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="9d5d2802-e818-4e18-96d9-fd2ce006ebaa"/>
+  <meta>
+    <lastUpdated value="2021-09-07T10:06:16.917+00:00"/>
+  </meta>
+  <type value="collection"/>
+</Bundle>

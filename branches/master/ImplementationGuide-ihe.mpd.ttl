@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "IHE_MPD"];
   fhir:ImplementationGuide.title [ fhir:value "Medication Prescription and Delivery (MPD)"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-10-11T14:34:14+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-10-11T14:44:35+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Integrating the Healthcare Enterprise (IHE)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -322,8 +322,8 @@
          fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationAdministrationHMW>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationAdministrationHMW" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model for administration from HMW" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical Model for administration from HMW" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[HMW] Logical Model for administration" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "[HMW] Logical Model for administration" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -336,8 +336,8 @@
          fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispenseHMW>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationDispenseHMW" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model for dispense from HMW" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical Model for dispense from HMW" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[HMW] Logical Model for dispense" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "[HMW] Logical Model for dispense" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -350,8 +350,8 @@
          fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderHMW>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationOrderHMW" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model for medication order from HMW" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical Model for medication order from HMW" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[HMW] Logical Model for medication order" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "[HMW] Logical Model for medication order" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -364,8 +364,8 @@
          fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PharmaceuticalAdviceHMW>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/PharmaceuticalAdviceHMW" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Logical Model for Pharmaceutical Advice from HMW" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical Model for Pharmaceutical Advice from HMW" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[HMW] Logical Model for Pharmaceutical Advice" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "[HMW] Logical Model for Pharmaceutical Advice" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

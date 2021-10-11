@@ -10,7 +10,7 @@
   "name": "IHE_MPD",
   "title": "Medication Prescription and Delivery (MPD)",
   "status": "active",
-  "date": "2021-10-11T14:34:14+00:00",
+  "date": "2021-10-11T14:44:35+00:00",
   "publisher": "Integrating the Healthcare Enterprise (IHE)",
   "contact": [
     {
@@ -341,8 +341,8 @@
         "reference": {
           "reference": "StructureDefinition/MedicationAdministrationHMW"
         },
-        "name": "Logical Model for administration from HMW",
-        "description": "Logical Model for administration from HMW",
+        "name": "[HMW] Logical Model for administration",
+        "description": "[HMW] Logical Model for administration",
         "exampleBoolean": false
       },
       {
@@ -355,8 +355,8 @@
         "reference": {
           "reference": "StructureDefinition/MedicationDispenseHMW"
         },
-        "name": "Logical Model for dispense from HMW",
-        "description": "Logical Model for dispense from HMW",
+        "name": "[HMW] Logical Model for dispense",
+        "description": "[HMW] Logical Model for dispense",
         "exampleBoolean": false
       },
       {
@@ -369,8 +369,8 @@
         "reference": {
           "reference": "StructureDefinition/MedicationOrderHMW"
         },
-        "name": "Logical Model for medication order from HMW",
-        "description": "Logical Model for medication order from HMW",
+        "name": "[HMW] Logical Model for medication order",
+        "description": "[HMW] Logical Model for medication order",
         "exampleBoolean": false
       },
       {
@@ -383,8 +383,8 @@
         "reference": {
           "reference": "StructureDefinition/PharmaceuticalAdviceHMW"
         },
-        "name": "Logical Model for Pharmaceutical Advice from HMW",
-        "description": "Logical Model for Pharmaceutical Advice from HMW",
+        "name": "[HMW] Logical Model for Pharmaceutical Advice",
+        "description": "[HMW] Logical Model for Pharmaceutical Advice",
         "exampleBoolean": false
       }
     ],

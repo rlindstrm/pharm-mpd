@@ -14,7 +14,7 @@
     <a href="index.html">MPD Home</a>
   </li>
   <li>
-    <a href="toc.html">Table of Contents</a>
+    <a href="toc.html">TOC</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Volume 1
@@ -47,7 +47,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="intro_2.html">Introduction</a>
+        <a href="intro_2.html">Introduction2</a>
       </li>
     </ul>
   </li>
@@ -68,6 +68,6 @@
     <a href="testplan.html">Test Plan</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifact Index</a>
+    <a href="artifacts.html">Artifacts</a>
   </li>
 </ul>

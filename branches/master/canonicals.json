@@ -21,6 +21,13 @@
     "name": "MedicationDispenseHMW"
   },
   {
+    "id": "MedicationDispenseIHEPWP",
+    "type": "StructureDefinition",
+    "url": "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispenseIHEPWP",
+    "version": "0.1.0",
+    "name": "MedicationDispenseIHEPWP"
+  },
+  {
     "id": "MedicationOrderHMW",
     "type": "StructureDefinition",
     "url": "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderHMW",
@@ -28,10 +35,24 @@
     "name": "MedicationOrderHMW"
   },
   {
+    "id": "MedicationOrderIHEPWP",
+    "type": "StructureDefinition",
+    "url": "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderIHEPWP",
+    "version": "0.1.0",
+    "name": "MedicationOrderIHEPWP"
+  },
+  {
     "id": "PharmaceuticalAdviceHMW",
     "type": "StructureDefinition",
     "url": "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PharmaceuticalAdviceHMW",
     "version": "0.1.0",
     "name": "PharmaceuticalAdviceHMW"
+  },
+  {
+    "id": "PharmaceuticalAdviceIHEPWP",
+    "type": "StructureDefinition",
+    "url": "http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PharmaceuticalAdviceIHEPWP",
+    "version": "0.1.0",
+    "name": "PharmaceuticalAdviceIHEPWP"
   }
 ]

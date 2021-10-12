@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "PharmaceuticalAdviceHMW"];
   fhir:StructureDefinition.title [ fhir:value "[HMW] Logical Model for Pharmaceutical Advice"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-10-12T13:17:39+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-10-12T13:21:27+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Integrating the Healthcare Enterprise (IHE)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

@@ -1,0 +1,46 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"MedicationOrderIHEPWP","","","",0,*,"","","","","[IHE PHARM White Paper] Logical Model for order","A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MedicationOrderIHEPWP.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the medication Order","The business identifier(s) for the medication order","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.identifier",0,1,"",""
+"MedicationOrderIHEPWP.date","","","",0,1,"","","","dateTime {[]} {[]}
+","When prescription was initially made","When prescription was initially made","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.date",0,1,"",""
+"MedicationOrderIHEPWP.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","The person for which the medication is prescribed.","The person for which the medication is prescribed.","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.patient",1,1,"",""
+"MedicationOrderIHEPWP.reason","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+","Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)(may or may not be explicitly stated)","Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)(may or may not be explicitly stated)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.reason",0,*,"",""
+"MedicationOrderIHEPWP.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Additional Information about the prescription","Additional Information about the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.note",0,*,"",""
+"MedicationOrderIHEPWP.requester","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
+","Who made the prescription","Who made the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.requester",0,1,"",""
+"MedicationOrderIHEPWP.status","","","",1,1,"","","","code {[]} {[]}
+","Status of the prescription ORDERED|PLACED|IN PROGRESS|COMPLETED|CANCELLED|DISCONTINUED|SUSPENDED","Status of the prescription ORDERED|PLACED|IN PROGRESS|COMPLETED|CANCELLED|DISCONTINUED|SUSPENDED","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.status",1,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem","","","",0,*,"","","","BackboneElement {[]} {[]}
+","A prescription item belongs to one prescription and represents one prescribed medication. It may  be associated with one or more observations. Prescription Item is the atomic entity for logistics, distribution and billing.","A prescription item belongs to one prescription and represents one prescribed medication. It may  be associated with one or more observations. Prescription Item is the atomic entity for logistics, distribution and billing.","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem",0,*,"",""
+"MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID","","","",1,1,"","","","Identifier {[]} {[]}
+"," Prescription Item ID "," Prescription Item ID ","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID",1,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.treatmentDate","","","",0,1,"","","","Duration {[]} {[]}
+","Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals ","Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.treatmentDate",0,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing","","","",0,1,"","","","string {[]} {[]}
+","Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)","Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing",0,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.Frequency","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.Frequency",0,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed","","","",0,1,"","","","string {[]} {[]}
+","Substitution allowed or not (can the pharmacist do a substitution of medication?)","Substitution allowed or not (can the pharmacist do a substitution of medication?)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed",0,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.route","","","",0,1,"","","","string {[]} {[]}
+","Route of administration","Route of administration","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.route",0,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.Dosage","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.Dosage",0,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.intakePattern","","","",0,1,"","","","string {[]} {[]}
+","Intake pattern for the medication","Intake pattern for the medication","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.intakePattern",0,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.medicalInstructions","","","",0,1,"","","","string {[]} {[]}
+","Diagnosis or reason for prescribing is this similar the 3rd bullet point?","Diagnosis or reason for prescribing is this similar the 3rd bullet point?","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.medicalInstructions",0,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions","","","",0,1,"","","","string {[]} {[]}
+","Alert about prescribing restrictions","Alert about prescribing restrictions","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions",0,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic","","","",0,1,"","","","string {[]} {[]}
+","Related to a chronic disease or not (listed or unlisted)","Related to a chronic disease or not (listed or unlisted)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic",0,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.specificFollowUp","","","",0,1,"","","","string {[]} {[]}
+","Specific follow-up elements","Specific follow-up elements","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.specificFollowUp",0,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.additionalComment","","","",0,1,"","","","string {[]} {[]}
+","Additional comment (may be used by the prescriber to inform the pharmacist that he is aware of a potential ICA)","Additional comment (may be used by the prescriber to inform the pharmacist that he is aware of a potential ICA)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.additionalComment",0,1,"",""
+"MedicationOrderIHEPWP.prescriptionItem.status","","","",0,1,"","","","string {[]} {[]}
+","Status (see the “Relevant Standards” chapter)","Status (see the “Relevant Standards” chapter)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.status",0,1,"",""

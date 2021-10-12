@@ -24,3 +24,19 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medicatio
 ","When advice was initially made","When advice was initially made","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.date",0,1,"",""
 "PharmaceuticalAdviceHMW.prescription","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest]]}
 ","The prescription identification","The prescription identification","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.prescription",0,1,"",""
+"PharmaceuticalAdviceHMW.Observation","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.Observation",0,1,"",""
+"PharmaceuticalAdviceHMW.problems","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.problems",0,1,"",""
+"PharmaceuticalAdviceHMW.summaryOf","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.summaryOf",0,1,"",""
+"PharmaceuticalAdviceHMW.physicianPharmacistDiscussion","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.physicianPharmacistDiscussion",0,1,"",""
+"PharmaceuticalAdviceHMW.Decision","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.Decision",0,1,"",""
+"PharmaceuticalAdviceHMW.pharmacist","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.pharmacist",0,1,"",""
+"PharmaceuticalAdviceHMW.pharmacy","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.pharmacy",0,1,"",""
+"PharmaceuticalAdviceHMW.substitutionStatus","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceHMW.substitutionStatus",0,1,"",""

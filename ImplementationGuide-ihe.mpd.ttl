@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "IHE_MPD"];
   fhir:ImplementationGuide.title [ fhir:value "Medication Prescription and Delivery (MPD)"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-11-09T17:14:07+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-11-26T09:08:14+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Integrating the Healthcare Enterprise (IHE)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -333,6 +333,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationAdministrationIHEMM>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationAdministrationIHEMM" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[IHE MM] Logical Model for administration" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "[HMW] Logical Model for administration" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispenseHMW>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationDispenseHMW" ]
        ];
@@ -340,7 +354,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "[HMW] Logical Model for dispense" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationDispenseIHEMM>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationDispenseIHEMM" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[IHE MM] Logical Model for medication dispense" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A medication dispense relates to zero or one prescription item of one prescription. There are cases when a medication is dispensed before the prescription is created. Medications dispensed outside the context of any prescription are considered as self-prescribed by the professional who dispenses. Thus they are still attached to a pseudo-prescription. A medication dispense is issued by one pharmacy staff. It is related to zero (community use case) or one (hospital use case) encounter of care." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -354,7 +382,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A medication dispense relates to zero or one prescription item of one prescription. There are cases when a medication is dispensed before the prescription is created. Medications dispensed outside the context of any prescription are considered as self-prescribed by the professional who dispenses. Thus they are still attached to a pseudo-prescription. A medication dispense is issued by one pharmacy staff. It is related to zero (community use case) or one (hospital use case) encounter of care." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -368,7 +396,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "[HMW] Logical Model for medication order" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/MedicationOrderIHEMM>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationOrderIHEMM" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[IHE MM] Logical Model for order" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -382,7 +424,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -396,7 +438,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "[HMW] Logical Model for Pharmaceutical Advice" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PharmaceuticalAdviceIHEMM>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PharmaceuticalAdviceIHEMM" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[IHE MM] Logical Model for pharmaceutical advice" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pharmaceutical advice relates to one or more prescription items of one prescription. It is issued by one pharmacist. It may be associated with one or more observations." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

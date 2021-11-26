@@ -1,15 +1,15 @@
 ﻿IHE_MPD : Validation Results
 =========================================
 
-err = 15, warn = 24, info = 0
+err = 16, warn = 26, info = 0
 IG Publisher Version: 1.1.89
-Generated Fri Nov 26 09:08:33 UTC 2021. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
+Generated Fri Nov 26 09:17:31 UTC 2021. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
  Build Errors : 0 / 1 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-ihe.mpd : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicationAdministrationHMW : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicationAdministrationIHEMM : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispenseHMW : 1 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispenseIHEMM : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispenseIHEMM : 2 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicationDispenseIHEPWP : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOrderHMW : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicationOrderIHEMM : 1 / 1 / 1
@@ -33,6 +33,9 @@ ERROR: StructureDefinition/MedicationDispenseHMW: StructureDefinition.baseDefini
 WARNING: StructureDefinition/MedicationDispenseHMW: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/StructureDefinition-MedicationDispenseIHEMM.json ==
 ERROR: StructureDefinition/MedicationDispenseIHEMM: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+ERROR: StructureDefinition/MedicationDispenseIHEMM: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+WARNING: StructureDefinition/MedicationDispenseIHEMM: StructureDefinition.snapshot.element[14]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/MedicationDispenseIHEMM: StructureDefinition.differential.element[14]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/MedicationDispenseIHEMM: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/StructureDefinition-MedicationDispenseIHEPWP.json ==
 ERROR: StructureDefinition/MedicationDispenseIHEPWP: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve

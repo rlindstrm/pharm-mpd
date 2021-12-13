@@ -11,7 +11,7 @@
   <name value="IHE_MPD"/>
   <title value="Medication Prescription and Delivery (MPD)"/>
   <status value="active"/>
-  <date value="2021-11-26T09:29:27+00:00"/>
+  <date value="2021-12-13T10:16:17+00:00"/>
   <publisher value="Integrating the Healthcare Enterprise (IHE)"/>
   <contact>
     <name value="Integrating the Healthcare Enterprise (IHE)"/>
@@ -231,7 +231,7 @@
         <reference value="StructureDefinition/MedicationAdministrationIHEMM"/>
       </reference>
       <name value="[IHE MM] Logical Model for administration"/>
-      <description value="[HMW] Logical Model for administration"/>
+      <description value="Logical Model for administration"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -356,6 +356,16 @@
         <nameUrl value="usecases.html"/>
         <title value="Use Cases"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="MMA-homenursing.html"/>
+          <title value="Mobile Medication Administration - Home Nursing"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="MMA-chemotherapy.html"/>
+          <title value="Mobile Medication Administration - Chemotherapy"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <nameUrl value="overview.html"/>

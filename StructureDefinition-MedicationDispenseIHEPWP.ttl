@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "MedicationDispenseIHEPWP"];
   fhir:StructureDefinition.title [ fhir:value "[IHE PHARM White Paper] Logical Model for medication dispense"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-11-26T09:29:27+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-12-13T10:16:17+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Integrating the Healthcare Enterprise (IHE)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

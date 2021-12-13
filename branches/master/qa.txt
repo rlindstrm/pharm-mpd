@@ -1,9 +1,9 @@
 ﻿IHE_MPD : Validation Results
 =========================================
 
-err = 18, warn = 24, info = 0
-IG Publisher Version: 1.1.89
-Generated Fri Nov 26 09:29:48 UTC 2021. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
+err = 18, warn = 20, info = 0
+IG Publisher Version: 1.1.90
+Generated Mon Dec 13 10:16:41 UTC 2021. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
  Build Errors : 0 / 1 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-ihe.mpd : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedicationAdministrationHMW : 2 / 1 / 1
@@ -50,12 +50,8 @@ WARNING: StructureDefinition/MedicationOrderIHEMM: StructureDefinition: Unable t
 == fsh-generated/resources/StructureDefinition-MedicationOrderIHEPWP.json ==
 ERROR: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
 ERROR: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
-WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot.element[9].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot.element[10].short: value should not start or finish with whitespace
 WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot.element[12]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.snapshot.element[15]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.differential.element[9].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.differential.element[10].short: value should not start or finish with whitespace
 WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.differential.element[12]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition.differential.element[15]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/MedicationOrderIHEPWP: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential

@@ -10,7 +10,7 @@
   "name": "IHE_MPD",
   "title": "Medication Prescription and Delivery (MPD)",
   "status": "active",
-  "date": "2021-11-26T09:29:27+00:00",
+  "date": "2021-12-13T10:16:17+00:00",
   "publisher": "Integrating the Healthcare Enterprise (IHE)",
   "contact": [
     {
@@ -356,7 +356,7 @@
           "reference": "StructureDefinition/MedicationAdministrationIHEMM"
         },
         "name": "[IHE MM] Logical Model for administration",
-        "description": "[HMW] Logical Model for administration",
+        "description": "Logical Model for administration",
         "exampleBoolean": false
       },
       {
@@ -509,7 +509,19 @@
         {
           "nameUrl": "usecases.html",
           "title": "Use Cases",
-          "generation": "markdown"
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "MMA-homenursing.html",
+              "title": "Mobile Medication Administration - Home Nursing",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "MMA-chemotherapy.html",
+              "title": "Mobile Medication Administration - Chemotherapy",
+              "generation": "markdown"
+            }
+          ]
         },
         {
           "nameUrl": "overview.html",

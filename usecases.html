@@ -189,74 +189,70 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#intra-hospital-medication" id="markdown-toc-intra-hospital-medication">Intra-hospital medication</a></li>
+  <li><a href="#community-prescription-and-dispense" id="markdown-toc-community-prescription-and-dispense">Community prescription and dispense</a></li>
+  <li><a href="#hospital-community-interface" id="markdown-toc-hospital-community-interface">Hospital-Community interface</a></li>
+  <li><a href="#mobile-medication-administration" id="markdown-toc-mobile-medication-administration">Mobile Medication administration</a></li>
+  <li><a href="#othersungrouped" id="markdown-toc-othersungrouped">Others/ungrouped</a></li>
+  <li><a href="#chemotherapy" id="markdown-toc-chemotherapy">Chemotherapy</a></li>
+</ul>
+
 </div>
 <p>The use cases for this profile are:</p>
 
+<h3 id="intra-hospital-medication">Intra-hospital medication</h3>
 <ol>
-  <li>Intra-hospital medication
-    <ol>
-      <li>usage of the full circuit (order -&gt;pharmacy validation-&gt;distribution-&gt;administration)</li>
-      <li>usage without validation</li>
-      <li>cancel prescription before validation</li>
-      <li>cancel prescription after validation</li>
-      <li>cancel prescription after dispense</li>
-      <li>cancel prescription after administration</li>
-      <li>prescription refuse by pharmacist</li>
-      <li>validation cancelled by pharmacist before dispense</li>
-      <li>validation cancelled by pharmacist after dispense</li>
-      <li>validation cancelled by pharmacist after administration</li>
-      <li>cancellation of administration</li>
-    </ol>
-  </li>
+  <li>usage of the full circuit (order -&gt;pharmacy validation-&gt;distribution-&gt;administration)</li>
+  <li>usage without validation</li>
+  <li>cancel prescription before validation</li>
+  <li>cancel prescription after validation</li>
+  <li>cancel prescription after dispense</li>
+  <li>cancel prescription after administration</li>
+  <li>prescription refuse by pharmacist</li>
+  <li>validation cancelled by pharmacist before dispense</li>
+  <li>validation cancelled by pharmacist after dispense</li>
+  <li>validation cancelled by pharmacist after administration</li>
+  <li>cancellation of administration</li>
 </ol>
 
+<h3 id="community-prescription-and-dispense">Community prescription and dispense</h3>
 <ol>
-  <li>Community prescription and dispense
-    <ol>
-      <li>prescription-dispense scenario - only order, validation and dispense</li>
-      <li>prescription-dispense scenario - only planning, order, dispense  and administration</li>
-      <li>request medication list (?)</li>
-      <li>changes to medication list (?)</li>
-      <li>change or cancel medication after dispense</li>
-    </ol>
-  </li>
+  <li>prescription-dispense scenario - only order, validation and dispense</li>
+  <li>prescription-dispense scenario - only planning, order, dispense  and administration</li>
+  <li>request medication list (?)</li>
+  <li>changes to medication list (?)</li>
+  <li>change or cancel medication after dispense</li>
 </ol>
 
+<h3 id="hospital-community-interface">Hospital-Community interface</h3>
 <ol>
-  <li>Hospital-Community interface
-    <ol>
-      <li>admission</li>
-      <li>discharge</li>
-      <li>reconcilliation as a whole</li>
-    </ol>
-  </li>
+  <li>admission</li>
+  <li>discharge</li>
+  <li>reconcilliation as a whole</li>
 </ol>
 
+<h3 id="mobile-medication-administration">Mobile Medication administration</h3>
 <ol>
-  <li>Mobile Medication administration
-    <ol>
-      <li>Home chemotherapy</li>
-      <li>Home nursing</li>
-    </ol>
-  </li>
-  <li>Others/ungrouped
-    <ol>
-      <li>Medication brand change on validation/dispense</li>
-      <li>Dispense made before prescription</li>
-      <li>dispense made but drug not taken</li>
-      <li>dispense of product that do not require prescription</li>
-      <li>drug administration stopped due to allergic reaction/Adverse drug effect</li>
-    </ol>
-  </li>
-  <li>Chemotherapy
-    <ol>
-      <li>planning of drug cycles</li>
-      <li>drug cycle management</li>
-      <li>… other</li>
-    </ol>
-  </li>
+  <li><a href="MMA-chemotherapy.html">Home chemotherapy</a></li>
+  <li><a href="MMA-chemotherapy.html">Home nursing</a></li>
+</ol>
+
+<h3 id="othersungrouped">Others/ungrouped</h3>
+<ol>
+  <li>Medication brand change on validation/dispense</li>
+  <li>Dispense made before prescription</li>
+  <li>dispense made but drug not taken</li>
+  <li>dispense of product that do not require prescription</li>
+  <li>drug administration stopped due to allergic reaction/Adverse drug effect</li>
+</ol>
+
+<h3 id="chemotherapy">Chemotherapy</h3>
+<ol>
+  <li>planning of drug cycles</li>
+  <li>drug cycle management</li>
+  <li>… other</li>
 </ol>
 
 
@@ -284,7 +280,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.mpd#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 13, 2021 10:30+0000">2021-12-13</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.mpd#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 17, 2021 08:35+0000">2021-12-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

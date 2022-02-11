@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "IHE_MPD"];
   fhir:ImplementationGuide.title [ fhir:value "Medication Prescription and Delivery (MPD)"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-02-10T12:53:49+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-02-11T08:25:18+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Integrating the Healthcare Enterprise (IHE)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -502,11 +502,16 @@
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ], [
            fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "presc-use-case-2.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Case 2: Proposal order" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 2;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "MMA-homenursing.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "Mobile Medication Administration - Home Nursing" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ], [
-           fhir:index 2;
+           fhir:index 3;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "MMA-chemotherapy.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "Mobile Medication Administration - Chemotherapy" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]

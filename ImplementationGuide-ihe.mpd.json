@@ -10,7 +10,7 @@
   "name": "IHE_MPD",
   "title": "Medication Prescription and Delivery (MPD)",
   "status": "active",
-  "date": "2022-02-10T12:53:49+00:00",
+  "date": "2022-02-11T08:25:18+00:00",
   "publisher": "Integrating the Healthcare Enterprise (IHE)",
   "contact": [
     {
@@ -519,6 +519,11 @@
             {
               "nameUrl": "presc-use-case1.html",
               "title": "Use Case 1: Order straight to dispense",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "presc-use-case-2.html",
+              "title": "Use Case 2: Proposal order",
               "generation": "markdown"
             },
             {

@@ -11,7 +11,7 @@
   <name value="IHE_MPD"/>
   <title value="Medication Prescription and Delivery (MPD)"/>
   <status value="active"/>
-  <date value="2022-02-10T12:53:49+00:00"/>
+  <date value="2022-02-11T08:25:18+00:00"/>
   <publisher value="Integrating the Healthcare Enterprise (IHE)"/>
   <contact>
     <name value="Integrating the Healthcare Enterprise (IHE)"/>
@@ -364,6 +364,11 @@
         <page>
           <nameUrl value="presc-use-case1.html"/>
           <title value="Use Case 1: Order straight to dispense"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="presc-use-case-2.html"/>
+          <title value="Use Case 2: Proposal order"/>
           <generation value="markdown"/>
         </page>
         <page>

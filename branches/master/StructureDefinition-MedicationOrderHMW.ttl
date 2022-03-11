@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "MedicationOrderHMW"];
   fhir:StructureDefinition.title [ fhir:value "[HMW] Logical Model for medication order"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-11T08:54:44+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-11T08:56:50+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Integrating the Healthcare Enterprise (IHE)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

@@ -20,6 +20,8 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/ihe.css" rel="stylesheet"/>
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async> </script> 
+
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -61,7 +63,17 @@
 -->
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Medication Prescription and Delivery (MPD)</span><br/>0.1.0 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Medication Prescription and Delivery (MPD)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -191,6 +203,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+
+
+
     <p><!-- white space is critical inside of capture --></p>
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
@@ -198,17 +213,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h2 id="main-actors">Main actors</h2>
 
 <ol>
-  <li>
-    <p>Prescription placer<br />
-The main role of this actor consists in placing the prescription (initial or modified in case of a substitution of invalidation, for example). It sends the cancellation of the prescription or its discontinuation, as well. In order to fulfill this task, the prescription placer retrieves the current treatment of the patient and medication already dispensed recently. 
-The prescription placer receives the pharmaceutical validation and status tracking information such as substitution, availability, administration plan and reports and cancellation. The corresponding human actor is a prescriber.</p>
-  </li>
-  <li>
-    <p>Pharmaceutical adviser<br />
-This actor is responsible for the validation of prescriptions from a pharmacist’s perspective. Therefore, it receives the initial prescription, validates it and sends it back (accepted, cancelled, modified, substitution of pharmaceutical product); therefore it provides the pharmaceutical advice. To perform this task it checks the current treatment.
-The pharmaceutical advice can be due to clinical, legal, or supply aspects.
-This actor may be implemented in the hospital pharmacy module of a hospital information system or the point of sale software of the pharmacy. The corresponding human actor is typically a pharmacist (or pharmacist assistant).</p>
-  </li>
+  <li>Prescription Actor<br />
+This actor is responsible for all things prescription related. It can be someone (or system) that triggers a new prescription or someone who acts on a existing prescription.
+For this, it can review the prescription (only overview and comment), validate (can block prescription from going further down the line) or plan a prescription for someone else to analyse and formalize the request.</li>
+</ol>
+
+<p><strong>Roles</strong></p>
+<ul>
+  <li>Prescription Placer</li>
+  <li>Prescription Validation</li>
+  <li>Prescription Reviewer</li>
+  <li>Prescription Planning</li>
+</ul>
+
+<ol>
   <li>
     <p>Medication dispenser<br />
 This actor is responsible for the process of dispensing medication to the patient, fulfilling the prescription. Therefore it produces the information on the medication dispensed to the patient. In order to achieve this, it receives prescriptions already validated. It also confirms drug availability for administration and it receives the administration plan and administration reports. This actor may be implemented as the point of sale software of a community pharmacy or the hospital pharmacy module of a hospital information system. The human actor behind this system actor is usually a pharmacist or a pharmacist assistant. In addition to the dispense, in this version this actor is considered to take care of all the dependencies to ensure a proper dispensing.</p>
@@ -249,7 +267,7 @@ Through administration reports, the Medication Administration Manager actor repo
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.mpd#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 11, 2022 08:25+0000">2022-02-11</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">Integrating the Healthcare Enterprise (IHE)</a>.  Package ihe.pharm.mpd#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 11, 2022 08:54+0000">2022-03-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -260,6 +278,12 @@ Through administration reports, the Medication Administration Manager actor repo
                  <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="assets/images/cc-by.png" height="17"/></a> |
                 <!-- <a style="color: var(--footer-hyperlink-text-color)" href="searchform.html">Search</a> | -->
                  <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.ihe.net/resources/public_comment/">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HLBNC861DJ');
+</script>
 
           </span>
         </p>
@@ -279,6 +303,8 @@ Through administration reports, the Medication Administration Manager actor repo
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

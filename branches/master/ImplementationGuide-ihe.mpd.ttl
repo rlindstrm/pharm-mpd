@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "IHE_MPD"];
   fhir:ImplementationGuide.title [ fhir:value "Medication Prescription and Delivery (MPD)"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-02-11T08:25:18+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-11T08:54:44+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Integrating the Healthcare Enterprise (IHE)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -304,6 +304,30 @@
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
          fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];

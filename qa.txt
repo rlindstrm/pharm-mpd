@@ -2,8 +2,8 @@
 =========================================
 
 err = 8, warn = 29, info = 0
-IG Publisher Version: 1.2.32
-Generated Sat Feb 04 16:52:04 UTC 2023. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
+IG Publisher Version: 1.2.32 Out of date - current version is ?pub-ver-1?
+Generated Sat Feb 04 16:54:24 UTC 2023. FHIR version 4.0.1 for ihe.pharm.mpd#0.1.0 (canonical = http://profiles.ihe.net/PHARM/ihe.pharm.mpd)
  Build Errors : 0 / 6 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-ihe.mpd : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-CD : 0 / 1 / 1

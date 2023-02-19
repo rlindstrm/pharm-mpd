@@ -1,72 +1,30 @@
 "Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
-"MedicationAdministrationIHEMM","MedicationAdministrationIHEMM","MedicationAdministrationIHEMM","","","",0,*,"","","","","[IHE MM] Logical Model for administration","Logical Model for administration","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"PharmaceuticalAdviceIHEMM","PharmaceuticalAdviceIHEMM","PharmaceuticalAdviceIHEMM","","","",0,*,"","","","","[IHE MM] Logical Model for pharmaceutical advice","Pharmaceutical advice relates to one or more prescription items of one prescription. It is issued by one pharmacist. It may be associated with one or more observations.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW","MedicationAdministrationHMW","","","",0,*,"","","","null {[]} {[]}
-","[HMW] Logical Model for administration","[HMW] Logical Model for administration","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.identifier","MedicationAdministrationHMW.identifier","","","",0,*,"","","","Identifier {[]} {[]}
-","The business identifier(s) for the medication Administration","The business identifier(s) for the medication Administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.identifier",0,*,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.status","MedicationAdministrationHMW.status","","","",1,1,"","","","code {[]} {[]}
-","Status of the medication administration","Status of the medication administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.status",1,1,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.statusReason","MedicationAdministrationHMW.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","Reason supporting the status of the medication administration","Reason supporting the status of the medication administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.statusReason",0,*,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.product[x]","MedicationAdministrationHMW.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","What was administered","What was administered","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.product[x]",1,1,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.subject","MedicationAdministrationHMW.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
-","Who received medication","Who received medication","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.subject",1,1,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.encounter","MedicationAdministrationHMW.encounter","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
-","Encounter administered as part of","Encounter administered as part of","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.encounter",0,1,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.occurence[x]","MedicationAdministrationHMW.occurence[x]","","","",1,1,"","","","dateTime {[]} {[]}
-Period {[]} {[]}","Start and end time of administration","Start and end time of administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.occurence[x]",1,1,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.recorded","MedicationAdministrationHMW.recorded","","","",0,1,"","","","dateTime {[]} {[]}
-","When the Medication administration was first captured in the subject's record","When the Medication administration was first captured in the subject's record","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.recorded",0,1,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.performer","MedicationAdministrationHMW.performer","","","",0,*,"","","","BackboneElement {[]} {[]}
-","Who performed the medication administration and what they did","Who performed the medication administration and what they did","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.performer",0,*,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.reason[x]","MedicationAdministrationHMW.reason[x]","","","",0,*,"","","","CodeableConcept {[]} {[]}
-Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport]]}","Information that supports why the medication was administered","Information that supports why the medication was administered","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.reason[x]",0,*,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.prescription","MedicationAdministrationHMW.prescription","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest]]}
-","Prescription for which the administration was performed against","Prescription for which the administration was performed against","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.prescription",0,1,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.device","MedicationAdministrationHMW.device","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
-","Device used to administer","Device used to administer","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.device",0,*,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.note","MedicationAdministrationHMW.note","","","",0,*,"","","","Annotation {[]} {[]}
-","Further information about the administration","Further information about the administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.note",0,*,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.dosage","MedicationAdministrationHMW.dosage","","","",0,1,"","","","Dosage {[]} {[]}
-","Details of how medication was administered","Details of how medication was administered","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.dosage",0,1,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.location","MedicationAdministrationHMW.location","","","",0,1,"","","","string {[]} {[]}
-","Where the administration was performed","Where the administration was performed","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.location",0,1,"",""
-"MedicationAdministrationHMW","MedicationAdministrationHMW.reaction","MedicationAdministrationHMW.reaction","","","",0,1,"","","","string {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.reaction",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP","MedicationDispenseIHEPWP","","","",0,*,"","","","null {[]} {[]}
-","[IHE PHARM White Paper] Logical Model for medication dispense","A medication dispense relates to zero or one prescription item of one prescription. There are cases when a medication is dispensed before the prescription is created. Medications dispensed outside the context of any prescription are considered as self-prescribed by the professional who dispenses. Thus they are still attached to a pseudo-prescription. A medication dispense is issued by one pharmacy staff. It is related to zero (community use case) or one (hospital use case) encounter of care.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.dispenseID","MedicationDispenseIHEPWP.dispenseID","","","",0,1,"","","","Identifier {[]} {[]}
-","Pharmaceutical advice ID","Pharmaceutical advice ID","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.dispenseID",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.refillnumber","MedicationDispenseIHEPWP.refillnumber","","","",0,1,"","","","string {[]} {[]}
-","refill number","refill number","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.refillnumber",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.date","MedicationDispenseIHEPWP.date","","","",0,1,"","","","dateTime {[]} {[]}
-","Date/Time of dispense","Date/Time of dispense","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.date",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.location","MedicationDispenseIHEPWP.location","","","",0,1,"","","","string {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.location",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.patient","MedicationDispenseIHEPWP.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
-","The person for which the medication is prescribed.","The person for which the medication is prescribed.","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.patient",1,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.expectedQuantity","MedicationDispenseIHEPWP.expectedQuantity","","","",0,1,"","","","integer {[]} {[]}
-","Expected quantity (number of packs/number of units)","Expected quantity (number of packs/number of units)","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.expectedQuantity",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.quantityDelivered","MedicationDispenseIHEPWP.quantityDelivered","","","",0,1,"","","","integer {[]} {[]}
-","Quantity delivered (number of packs/number of units)","Quantity delivered (number of packs/number of units)","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.quantityDelivered",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.dispensingperiod","MedicationDispenseIHEPWP.dispensingperiod","","","",0,1,"","","","Period {[]} {[]}
-","Dispensing period (period for which the medication is dispensed)","Dispensing period (period for which the medication is dispensed)","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.dispensingperiod",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.dispensingPresentation","MedicationDispenseIHEPWP.dispensingPresentation","","","",0,1,"","","","string {[]} {[]}
-","Dispensing presentation: blister, box, single dose unit","Dispensing presentation: blister, box, single dose unit","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.dispensingPresentation",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.deliveryMode","MedicationDispenseIHEPWP.deliveryMode","","","",0,1,"","","","string {[]} {[]}
-","Delivery mode : bulk, nominative (per patient)"," Delivery mode : bulk, nominative (per patient)","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.deliveryMode",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.batchNumber","MedicationDispenseIHEPWP.batchNumber","","","",0,1,"","","","string {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.batchNumber",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.expirationDate","MedicationDispenseIHEPWP.expirationDate","","","",0,1,"","","","string {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.expirationDate",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.pharmaceuticalInstructions","MedicationDispenseIHEPWP.pharmaceuticalInstructions","","","",0,1,"","","","string {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.pharmaceuticalInstructions",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.pricepaidbypatient","MedicationDispenseIHEPWP.pricepaidbypatient","","","",0,1,"","","","string {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.pricepaidbypatient",0,1,"",""
-"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.pharmacist","MedicationDispenseIHEPWP.pharmacist","","","",0,1,"","","","string {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.pharmacist",0,1,"",""
+"MedicationOrderHMW","MedicationOrderHMW","MedicationOrderHMW","","","",0,*,"","","","null {[]} {[]}
+","[HMW] Logical Model for medication order","[HMW] Logical Model for medication order","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MedicationOrderHMW","MedicationOrderHMW.identifier","MedicationOrderHMW.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the medication Order","The business identifier(s) for the medication order","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.identifier",0,1,"",""
+"MedicationOrderHMW","MedicationOrderHMW.patient","MedicationOrderHMW.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","The person for which the medication is prescribed.","The person for which the medication is prescribed.","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.patient",1,1,"",""
+"MedicationOrderHMW","MedicationOrderHMW.status","MedicationOrderHMW.status","","","",1,1,"","","","code {[]} {[]}
+","Status of the prescription","Status of the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.status",1,1,"",""
+"MedicationOrderHMW","MedicationOrderHMW.statusReason","MedicationOrderHMW.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Reason for current prescription status","Reason for current prescription status","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.statusReason",0,*,"",""
+"MedicationOrderHMW","MedicationOrderHMW.product[x]","MedicationOrderHMW.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","Product prescribed","Product prescribed","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.product[x]",1,1,"",""
+"MedicationOrderHMW","MedicationOrderHMW.encounter","MedicationOrderHMW.encounter","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
+","Encounter on which the medication was prescribed","Encounter on which the medication was prescribed","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.encounter",0,1,"",""
+"MedicationOrderHMW","MedicationOrderHMW.requester","MedicationOrderHMW.requester","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
+","Who made the prescription","Who made the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.requester",0,1,"",""
+"MedicationOrderHMW","MedicationOrderHMW.reason","MedicationOrderHMW.reason","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+","Reason or indication for ordering or not ordering the product","Reason or indication for ordering or not ordering the product","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.reason",0,*,"",""
+"MedicationOrderHMW","MedicationOrderHMW.groupIdentifier","MedicationOrderHMW.groupIdentifier","","","",0,1,"","","","Identifier {[]} {[]}
+","Composite request this is part of","Composite request this is part of","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.groupIdentifier",0,1,"",""
+"MedicationOrderHMW","MedicationOrderHMW.dosageInstruction","MedicationOrderHMW.dosageInstruction","","","",0,*,"","","","Dosage {[]} {[]}
+","How the product should be taken/administered","How the product should be taken/administered","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.dosageInstruction",0,*,"",""
+"MedicationOrderHMW","MedicationOrderHMW.note","MedicationOrderHMW.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Additional Information about the prescription","Additional Information about the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.note",0,*,"",""
+"MedicationOrderHMW","MedicationOrderHMW.date","MedicationOrderHMW.date","","","",0,1,"","","","dateTime {[]} {[]}
+","When prescription was initially made","When prescription was initially made","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.date",0,1,"",""
 "QT","Element","Element","","","",0,*,"","","","","quantity","Quantity","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
 ",""
 "QT","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
@@ -75,6 +33,31 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition
 user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"TS","Element","Element","","","",0,*,"","","","","TimeStamp","Time stamp","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+",""
+"TS","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"TS","Element.extension","Element.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"class","BackboneElement","BackboneElement","","","",0,*,"","","","null {[]} {[]}
+","group","Class of data elements","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+",""
+"class","BackboneElement.id","BackboneElement.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"class","BackboneElement.extension","BackboneElement.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"class","BackboneElement.modifierExtension","BackboneElement.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PharmaceuticalAdviceIHEPWP","PharmaceuticalAdviceIHEPWP","PharmaceuticalAdviceIHEPWP","","","",0,*,"","","","null {[]} {[]}
 ","[IHE PHARM White Paper] Logical Model for pharmaceutical advice","Pharmaceutical advice relates to one or more prescription items of one prescription. It is issued by one pharmacist. It may be associated with one or more observations.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
@@ -96,6 +79,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Date/Time of decision","Date/Time of decision","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceIHEPWP.datetimeDecision",0,1,"",""
 "PharmaceuticalAdviceIHEPWP","PharmaceuticalAdviceIHEPWP.pharmacist","PharmaceuticalAdviceIHEPWP.pharmacist","","","",0,1,"","","","string {[]} {[]}
 ","pharmacist","pharmacist","","","","","","","","","",,,,,"",,,,"PharmaceuticalAdviceIHEPWP.pharmacist",0,1,"",""
+"PharmaceuticalAdviceIHEMM","PharmaceuticalAdviceIHEMM","PharmaceuticalAdviceIHEMM","","","",0,*,"","","","","[IHE MM] Logical Model for pharmaceutical advice","Pharmaceutical advice relates to one or more prescription items of one prescription. It is issued by one pharmacist. It may be associated with one or more observations.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MedicationAdministrationIHEMM","MedicationAdministrationIHEMM","MedicationAdministrationIHEMM","","","",0,*,"","","","","[IHE MM] Logical Model for administration","Logical Model for administration","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"CD","Element","Element","","","",0,*,"","","","","coded","Concept Descriptor","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+",""
+"CD","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"CD","Element.extension","Element.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ePrescription","ePrescription","ePrescription","","","",0,*,"","","","null {[]} {[]}
 ","ePrescription","","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "ePrescription","ePrescription.patient","ePrescription.patient","","","",0,1,"","","","BackboneElement {[CanonicalType[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/class]]} {[]}
@@ -460,162 +454,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","","","","","","","","","","","",,,,,"",,,,"ePrescription.prescriptionData.legalEntity",0,1,"",""
 "ePrescription","ePrescription.prescriptionData.relatedDocument","ePrescription.prescriptionData.relatedDocument","","","",0,1,"","","","Element {[CanonicalType[http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/untyped]]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"ePrescription.prescriptionData.relatedDocument",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP","MedicationOrderIHEPWP","","","",0,*,"","","","null {[]} {[]}
-","[IHE PHARM White Paper] Logical Model for order","A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.identifier","MedicationOrderIHEPWP.identifier","","","",0,1,"","","","Identifier {[]} {[]}
-","The business identifier(s) for the medication Order","The business identifier(s) for the medication order","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.identifier",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.date","MedicationOrderIHEPWP.date","","","",0,1,"","","","dateTime {[]} {[]}
-","When prescription was initially made","When prescription was initially made","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.date",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.patient","MedicationOrderIHEPWP.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
-","The person for which the medication is prescribed.","The person for which the medication is prescribed.","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.patient",1,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.reason","MedicationOrderIHEPWP.reason","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
-","Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)(may or may not be explicitly stated)","Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)(may or may not be explicitly stated)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.reason",0,*,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.note","MedicationOrderIHEPWP.note","","","",0,*,"","","","Annotation {[]} {[]}
-","Additional Information about the prescription","Additional Information about the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.note",0,*,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.requester","MedicationOrderIHEPWP.requester","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
-","Who made the prescription","Who made the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.requester",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.status","MedicationOrderIHEPWP.status","","","",1,1,"","","","code {[]} {[]}
-","Status of the prescription ORDERED|PLACED|IN PROGRESS|COMPLETED|CANCELLED|DISCONTINUED|SUSPENDED","Status of the prescription ORDERED|PLACED|IN PROGRESS|COMPLETED|CANCELLED|DISCONTINUED|SUSPENDED","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.status",1,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem","MedicationOrderIHEPWP.prescriptionItem","","","",0,*,"","","","BackboneElement {[]} {[]}
-","A prescription item belongs to one prescription and represents one prescribed medication. It may  be associated with one or more observations. Prescription Item is the atomic entity for logistics, distribution and billing.","A prescription item belongs to one prescription and represents one prescribed medication. It may  be associated with one or more observations. Prescription Item is the atomic entity for logistics, distribution and billing.","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.id","MedicationOrderIHEPWP.prescriptionItem.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.extension","MedicationOrderIHEPWP.prescriptionItem.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.modifierExtension","MedicationOrderIHEPWP.prescriptionItem.modifierExtension","","extensions
-user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
-","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
-
-Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID","MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID","","","",1,1,"","","","Identifier {[]} {[]}
-"," Prescription Item ID "," Prescription Item ID ","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID",1,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.treatmentDate","MedicationOrderIHEPWP.prescriptionItem.treatmentDate","","","",0,1,"","","","Duration {[]} {[]}
-","Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals ","Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.treatmentDate",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing","MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing","","","",0,1,"","","","string {[]} {[]}
-","Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)","Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.Frequency","MedicationOrderIHEPWP.prescriptionItem.Frequency","","","",0,1,"","","","string {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.Frequency",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed","MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed","","","",0,1,"","","","string {[]} {[]}
-","Substitution allowed or not (can the pharmacist do a substitution of medication?)","Substitution allowed or not (can the pharmacist do a substitution of medication?)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.route","MedicationOrderIHEPWP.prescriptionItem.route","","","",0,1,"","","","string {[]} {[]}
-","Route of administration","Route of administration","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.route",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.Dosage","MedicationOrderIHEPWP.prescriptionItem.Dosage","","","",0,1,"","","","string {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.Dosage",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.intakePattern","MedicationOrderIHEPWP.prescriptionItem.intakePattern","","","",0,1,"","","","string {[]} {[]}
-","Intake pattern for the medication","Intake pattern for the medication","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.intakePattern",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.medicalInstructions","MedicationOrderIHEPWP.prescriptionItem.medicalInstructions","","","",0,1,"","","","string {[]} {[]}
-","Diagnosis or reason for prescribing is this similar the 3rd bullet point?","Diagnosis or reason for prescribing is this similar the 3rd bullet point?","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.medicalInstructions",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions","MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions","","","",0,1,"","","","string {[]} {[]}
-","Alert about prescribing restrictions","Alert about prescribing restrictions","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic","MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic","","","",0,1,"","","","string {[]} {[]}
-","Related to a chronic disease or not (listed or unlisted)","Related to a chronic disease or not (listed or unlisted)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.specificFollowUp","MedicationOrderIHEPWP.prescriptionItem.specificFollowUp","","","",0,1,"","","","string {[]} {[]}
-","Specific follow-up elements","Specific follow-up elements","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.specificFollowUp",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.additionalComment","MedicationOrderIHEPWP.prescriptionItem.additionalComment","","","",0,1,"","","","string {[]} {[]}
-","Additional comment (may be used by the prescriber to inform the pharmacist that he is aware of a potential ICA)","Additional comment (may be used by the prescriber to inform the pharmacist that he is aware of a potential ICA)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.additionalComment",0,1,"",""
-"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.status","MedicationOrderIHEPWP.prescriptionItem.status","","","",0,1,"","","","string {[]} {[]}
-","Status (see the “Relevant Standards” chapter)","Status (see the “Relevant Standards” chapter)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.status",0,1,"",""
-"untyped","Element","Element","","","",0,*,"","","","","No specific data type assigned","No specific data type assigned","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
-",""
-"untyped","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"untyped","Element.extension","Element.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"II","Element","Element","","","",0,*,"","","","","identifier","Instance Identifier","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
-",""
-"II","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"II","Element.extension","Element.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ST","Element","Element","","","",0,*,"","","","","text","String","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
-",""
-"ST","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"ST","Element.extension","Element.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationOrderHMW","MedicationOrderHMW","MedicationOrderHMW","","","",0,*,"","","","null {[]} {[]}
-","[HMW] Logical Model for medication order","[HMW] Logical Model for medication order","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"MedicationOrderHMW","MedicationOrderHMW.identifier","MedicationOrderHMW.identifier","","","",0,1,"","","","Identifier {[]} {[]}
-","The business identifier(s) for the medication Order","The business identifier(s) for the medication order","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.identifier",0,1,"",""
-"MedicationOrderHMW","MedicationOrderHMW.patient","MedicationOrderHMW.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
-","The person for which the medication is prescribed.","The person for which the medication is prescribed.","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.patient",1,1,"",""
-"MedicationOrderHMW","MedicationOrderHMW.status","MedicationOrderHMW.status","","","",1,1,"","","","code {[]} {[]}
-","Status of the prescription","Status of the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.status",1,1,"",""
-"MedicationOrderHMW","MedicationOrderHMW.statusReason","MedicationOrderHMW.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","Reason for current prescription status","Reason for current prescription status","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.statusReason",0,*,"",""
-"MedicationOrderHMW","MedicationOrderHMW.product[x]","MedicationOrderHMW.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","Product prescribed","Product prescribed","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.product[x]",1,1,"",""
-"MedicationOrderHMW","MedicationOrderHMW.encounter","MedicationOrderHMW.encounter","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
-","Encounter on which the medication was prescribed","Encounter on which the medication was prescribed","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.encounter",0,1,"",""
-"MedicationOrderHMW","MedicationOrderHMW.requester","MedicationOrderHMW.requester","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
-","Who made the prescription","Who made the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.requester",0,1,"",""
-"MedicationOrderHMW","MedicationOrderHMW.reason","MedicationOrderHMW.reason","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
-","Reason or indication for ordering or not ordering the product","Reason or indication for ordering or not ordering the product","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.reason",0,*,"",""
-"MedicationOrderHMW","MedicationOrderHMW.groupIdentifier","MedicationOrderHMW.groupIdentifier","","","",0,1,"","","","Identifier {[]} {[]}
-","Composite request this is part of","Composite request this is part of","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.groupIdentifier",0,1,"",""
-"MedicationOrderHMW","MedicationOrderHMW.dosageInstruction","MedicationOrderHMW.dosageInstruction","","","",0,*,"","","","Dosage {[]} {[]}
-","How the product should be taken/administered","How the product should be taken/administered","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.dosageInstruction",0,*,"",""
-"MedicationOrderHMW","MedicationOrderHMW.note","MedicationOrderHMW.note","","","",0,*,"","","","Annotation {[]} {[]}
-","Additional Information about the prescription","Additional Information about the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.note",0,*,"",""
-"MedicationOrderHMW","MedicationOrderHMW.date","MedicationOrderHMW.date","","","",0,1,"","","","dateTime {[]} {[]}
-","When prescription was initially made","When prescription was initially made","","","","","","","","","",,,,,"",,,,"MedicationOrderHMW.date",0,1,"",""
-"DT","Element","Element","","","",0,*,"","","","","Date","Date","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
-",""
-"DT","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"DT","Element.extension","Element.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationDispenseHMW","MedicationDispenseHMW","MedicationDispenseHMW","","","",0,*,"","","","null {[]} {[]}
-","[HMW] Logical Model for dispense","[HMW] Logical Model for dispense","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"MedicationDispenseHMW","MedicationDispenseHMW.identifier","MedicationDispenseHMW.identifier","","","",0,1,"","","","Identifier {[]} {[]}
-","The business identifier(s) for the medication dispense session","The business identifier(s) for the medication dispense session","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.identifier",0,1,"",""
-"MedicationDispenseHMW","MedicationDispenseHMW.patient","MedicationDispenseHMW.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
-","The person for which the medication is dispensed.","The person for which the medication is dispensed.","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.patient",1,1,"",""
-"MedicationDispenseHMW","MedicationDispenseHMW.dispenser","MedicationDispenseHMW.dispenser","","","",0,*,"","","","BackboneElement {[]} {[]}
-","The dispenser, if known and relevant","The dispenser, if known and relevant","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.dispenser",0,*,"",""
-"MedicationDispenseHMW","MedicationDispenseHMW.date","MedicationDispenseHMW.date","","","",1,1,"","","","dateTime {[]} {[]}
-","The date when the dispense ocurred (or not)","The date when the dispense ocurred (or not)","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.date",1,1,"",""
-"MedicationDispenseHMW","MedicationDispenseHMW.prescription","MedicationDispenseHMW.prescription","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest]]}
-","The information about a prescription related to the dispense","The information about a prescription related to the dispense","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.prescription",0,1,"",""
-"MedicationDispenseHMW","MedicationDispenseHMW.status","MedicationDispenseHMW.status","","","",1,1,"","","","code {[]} {[]}
-","Status of the dispense","Status of the dispense","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.status",1,1,"",""
-"MedicationDispenseHMW","MedicationDispenseHMW.statusReason","MedicationDispenseHMW.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","Reason for a dispense status","Reason for a dispense status","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.statusReason",0,*,"",""
-"MedicationDispenseHMW","MedicationDispenseHMW.product[x]","MedicationDispenseHMW.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","The product that was dispensed","The product that was dispensed - coded or not (e.g. for magistral preparations)","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.product[x]",1,1,"",""
-"MedicationDispenseHMW","MedicationDispenseHMW.quantitydispensed","MedicationDispenseHMW.quantitydispensed","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
-","The amound of product that was dispensed","The amound of product that was dispensed","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.quantitydispensed",0,1,"",""
-"MedicationDispenseHMW","MedicationDispenseHMW.dosageInstruction","MedicationDispenseHMW.dosageInstruction","","","",0,1,"","","","Dosage {[]} {[]}
-","The instructions for using the product","The instructions for using the product","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.dosageInstruction",0,1,"",""
-"MedicationDispenseHMW","MedicationDispenseHMW.note","MedicationDispenseHMW.note","","","",0,*,"","","","Annotation {[]} {[]}
-","Additional information about the dispensed product","Additional information about the dispensed product","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.note",0,*,"",""
-"TS","Element","Element","","","",0,*,"","","","","TimeStamp","Time stamp","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
-",""
-"TS","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"TS","Element.extension","Element.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationOrderIHEMM","MedicationOrderIHEMM","MedicationOrderIHEMM","","","",0,*,"","","","","[IHE MM] Logical Model for order","A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "PharmaceuticalAdviceHMW","PharmaceuticalAdviceHMW","PharmaceuticalAdviceHMW","","","",0,*,"","","","null {[]} {[]}
 ","[HMW] Logical Model for Pharmaceutical Advice","[HMW] Logical Model for Pharmaceutical Advice","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "PharmaceuticalAdviceHMW","PharmaceuticalAdviceHMW.identifier","PharmaceuticalAdviceHMW.identifier","","","",0,1,"","","","Identifier {[]} {[]}
@@ -716,27 +554,189 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEMM.detectedIssues",0,1,"",""
 "MedicationDispenseIHEMM","MedicationDispenseIHEMM.eventHistory","MedicationDispenseIHEMM.eventHistory","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Provenance]]}
 ","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEMM.eventHistory",0,1,"",""
-"class","BackboneElement","BackboneElement","","","",0,*,"","","","null {[]} {[]}
-","group","Class of data elements","","","","","","","","","",,,,,"",,,,"BackboneElement",0,*,"ele-1
+"II","Element","Element","","","",0,*,"","","","","identifier","Instance Identifier","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
 ",""
-"class","BackboneElement.id","BackboneElement.id","","","",0,1,"","","","string {[]} {[]}
+"II","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"class","BackboneElement.extension","BackboneElement.extension","","extensions
+"II","Element.extension","Element.extension","","extensions
 user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"class","BackboneElement.modifierExtension","BackboneElement.modifierExtension","","extensions
+"MedicationOrderIHEMM","MedicationOrderIHEMM","MedicationOrderIHEMM","","","",0,*,"","","","","[IHE MM] Logical Model for order","A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"DT","Element","Element","","","",0,*,"","","","","Date","Date","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+",""
+"DT","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"DT","Element.extension","Element.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ST","Element","Element","","","",0,*,"","","","","text","String","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+",""
+"ST","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"ST","Element.extension","Element.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP","MedicationOrderIHEPWP","","","",0,*,"","","","null {[]} {[]}
+","[IHE PHARM White Paper] Logical Model for order","A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.identifier","MedicationOrderIHEPWP.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the medication Order","The business identifier(s) for the medication order","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.identifier",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.date","MedicationOrderIHEPWP.date","","","",0,1,"","","","dateTime {[]} {[]}
+","When prescription was initially made","When prescription was initially made","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.date",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.patient","MedicationOrderIHEPWP.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","The person for which the medication is prescribed.","The person for which the medication is prescribed.","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.patient",1,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.reason","MedicationOrderIHEPWP.reason","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+","Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)(may or may not be explicitly stated)","Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)(may or may not be explicitly stated)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.reason",0,*,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.note","MedicationOrderIHEPWP.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Additional Information about the prescription","Additional Information about the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.note",0,*,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.requester","MedicationOrderIHEPWP.requester","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
+","Who made the prescription","Who made the prescription","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.requester",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.status","MedicationOrderIHEPWP.status","","","",1,1,"","","","code {[]} {[]}
+","Status of the prescription ORDERED|PLACED|IN PROGRESS|COMPLETED|CANCELLED|DISCONTINUED|SUSPENDED","Status of the prescription ORDERED|PLACED|IN PROGRESS|COMPLETED|CANCELLED|DISCONTINUED|SUSPENDED","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.status",1,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem","MedicationOrderIHEPWP.prescriptionItem","","","",0,*,"","","","BackboneElement {[]} {[]}
+","A prescription item belongs to one prescription and represents one prescribed medication. It may  be associated with one or more observations. Prescription Item is the atomic entity for logistics, distribution and billing.","A prescription item belongs to one prescription and represents one prescribed medication. It may  be associated with one or more observations. Prescription Item is the atomic entity for logistics, distribution and billing.","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.id","MedicationOrderIHEPWP.prescriptionItem.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.extension","MedicationOrderIHEPWP.prescriptionItem.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.modifierExtension","MedicationOrderIHEPWP.prescriptionItem.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"CD","Element","Element","","","",0,*,"","","","","coded","Concept Descriptor","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID","MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID","","","",1,1,"","","","Identifier {[]} {[]}
+"," Prescription Item ID "," Prescription Item ID ","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.prescriptionItemID",1,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.treatmentDate","MedicationOrderIHEPWP.prescriptionItem.treatmentDate","","","",0,1,"","","","Duration {[]} {[]}
+","Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals ","Beginning date of treatment / length of treatment / End of treatment date ( the date the treatment is due to end) and/or number of renewals","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.treatmentDate",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing","MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing","","","",0,1,"","","","string {[]} {[]}
+","Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)","Reason for prescribing (e.g. diagnosis, prognosis, protocol, clinical assessment …)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.reasonForPrescribing",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.Frequency","MedicationOrderIHEPWP.prescriptionItem.Frequency","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.Frequency",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed","MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed","","","",0,1,"","","","string {[]} {[]}
+","Substitution allowed or not (can the pharmacist do a substitution of medication?)","Substitution allowed or not (can the pharmacist do a substitution of medication?)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.substitutionAllowed",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.route","MedicationOrderIHEPWP.prescriptionItem.route","","","",0,1,"","","","string {[]} {[]}
+","Route of administration","Route of administration","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.route",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.Dosage","MedicationOrderIHEPWP.prescriptionItem.Dosage","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.Dosage",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.intakePattern","MedicationOrderIHEPWP.prescriptionItem.intakePattern","","","",0,1,"","","","string {[]} {[]}
+","Intake pattern for the medication","Intake pattern for the medication","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.intakePattern",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.medicalInstructions","MedicationOrderIHEPWP.prescriptionItem.medicalInstructions","","","",0,1,"","","","string {[]} {[]}
+","Diagnosis or reason for prescribing is this similar the 3rd bullet point?","Diagnosis or reason for prescribing is this similar the 3rd bullet point?","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.medicalInstructions",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions","MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions","","","",0,1,"","","","string {[]} {[]}
+","Alert about prescribing restrictions","Alert about prescribing restrictions","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.alertAboutRestrictions",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic","MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic","","","",0,1,"","","","string {[]} {[]}
+","Related to a chronic disease or not (listed or unlisted)","Related to a chronic disease or not (listed or unlisted)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.relatedtoChronic",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.specificFollowUp","MedicationOrderIHEPWP.prescriptionItem.specificFollowUp","","","",0,1,"","","","string {[]} {[]}
+","Specific follow-up elements","Specific follow-up elements","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.specificFollowUp",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.additionalComment","MedicationOrderIHEPWP.prescriptionItem.additionalComment","","","",0,1,"","","","string {[]} {[]}
+","Additional comment (may be used by the prescriber to inform the pharmacist that he is aware of a potential ICA)","Additional comment (may be used by the prescriber to inform the pharmacist that he is aware of a potential ICA)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.additionalComment",0,1,"",""
+"MedicationOrderIHEPWP","MedicationOrderIHEPWP.prescriptionItem.status","MedicationOrderIHEPWP.prescriptionItem.status","","","",0,1,"","","","string {[]} {[]}
+","Status (see the “Relevant Standards” chapter)","Status (see the “Relevant Standards” chapter)","","","","","","","","","",,,,,"",,,,"MedicationOrderIHEPWP.prescriptionItem.status",0,1,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW","MedicationAdministrationHMW","","","",0,*,"","","","null {[]} {[]}
+","[HMW] Logical Model for administration","[HMW] Logical Model for administration","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.identifier","MedicationAdministrationHMW.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the medication Administration","The business identifier(s) for the medication Administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.identifier",0,*,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.status","MedicationAdministrationHMW.status","","","",1,1,"","","","code {[]} {[]}
+","Status of the medication administration","Status of the medication administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.status",1,1,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.statusReason","MedicationAdministrationHMW.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Reason supporting the status of the medication administration","Reason supporting the status of the medication administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.statusReason",0,*,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.product[x]","MedicationAdministrationHMW.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","What was administered","What was administered","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.product[x]",1,1,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.subject","MedicationAdministrationHMW.subject","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","Who received medication","Who received medication","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.subject",1,1,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.encounter","MedicationAdministrationHMW.encounter","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
+","Encounter administered as part of","Encounter administered as part of","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.encounter",0,1,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.occurence[x]","MedicationAdministrationHMW.occurence[x]","","","",1,1,"","","","dateTime {[]} {[]}
+Period {[]} {[]}","Start and end time of administration","Start and end time of administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.occurence[x]",1,1,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.recorded","MedicationAdministrationHMW.recorded","","","",0,1,"","","","dateTime {[]} {[]}
+","When the Medication administration was first captured in the subject's record","When the Medication administration was first captured in the subject's record","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.recorded",0,1,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.performer","MedicationAdministrationHMW.performer","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Who performed the medication administration and what they did","Who performed the medication administration and what they did","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.performer",0,*,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.reason[x]","MedicationAdministrationHMW.reason[x]","","","",0,*,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport]]}","Information that supports why the medication was administered","Information that supports why the medication was administered","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.reason[x]",0,*,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.prescription","MedicationAdministrationHMW.prescription","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest]]}
+","Prescription for which the administration was performed against","Prescription for which the administration was performed against","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.prescription",0,1,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.device","MedicationAdministrationHMW.device","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
+","Device used to administer","Device used to administer","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.device",0,*,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.note","MedicationAdministrationHMW.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Further information about the administration","Further information about the administration","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.note",0,*,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.dosage","MedicationAdministrationHMW.dosage","","","",0,1,"","","","Dosage {[]} {[]}
+","Details of how medication was administered","Details of how medication was administered","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.dosage",0,1,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.location","MedicationAdministrationHMW.location","","","",0,1,"","","","string {[]} {[]}
+","Where the administration was performed","Where the administration was performed","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.location",0,1,"",""
+"MedicationAdministrationHMW","MedicationAdministrationHMW.reaction","MedicationAdministrationHMW.reaction","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationAdministrationHMW.reaction",0,1,"",""
+"MedicationDispenseHMW","MedicationDispenseHMW","MedicationDispenseHMW","","","",0,*,"","","","null {[]} {[]}
+","[HMW] Logical Model for dispense","[HMW] Logical Model for dispense","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MedicationDispenseHMW","MedicationDispenseHMW.identifier","MedicationDispenseHMW.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the medication dispense session","The business identifier(s) for the medication dispense session","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.identifier",0,1,"",""
+"MedicationDispenseHMW","MedicationDispenseHMW.patient","MedicationDispenseHMW.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","The person for which the medication is dispensed.","The person for which the medication is dispensed.","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.patient",1,1,"",""
+"MedicationDispenseHMW","MedicationDispenseHMW.dispenser","MedicationDispenseHMW.dispenser","","","",0,*,"","","","BackboneElement {[]} {[]}
+","The dispenser, if known and relevant","The dispenser, if known and relevant","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.dispenser",0,*,"",""
+"MedicationDispenseHMW","MedicationDispenseHMW.date","MedicationDispenseHMW.date","","","",1,1,"","","","dateTime {[]} {[]}
+","The date when the dispense ocurred (or not)","The date when the dispense ocurred (or not)","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.date",1,1,"",""
+"MedicationDispenseHMW","MedicationDispenseHMW.prescription","MedicationDispenseHMW.prescription","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest]]}
+","The information about a prescription related to the dispense","The information about a prescription related to the dispense","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.prescription",0,1,"",""
+"MedicationDispenseHMW","MedicationDispenseHMW.status","MedicationDispenseHMW.status","","","",1,1,"","","","code {[]} {[]}
+","Status of the dispense","Status of the dispense","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.status",1,1,"",""
+"MedicationDispenseHMW","MedicationDispenseHMW.statusReason","MedicationDispenseHMW.statusReason","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Reason for a dispense status","Reason for a dispense status","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.statusReason",0,*,"",""
+"MedicationDispenseHMW","MedicationDispenseHMW.product[x]","MedicationDispenseHMW.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]}","The product that was dispensed","The product that was dispensed - coded or not (e.g. for magistral preparations)","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.product[x]",1,1,"",""
+"MedicationDispenseHMW","MedicationDispenseHMW.quantitydispensed","MedicationDispenseHMW.quantitydispensed","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
+","The amound of product that was dispensed","The amound of product that was dispensed","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.quantitydispensed",0,1,"",""
+"MedicationDispenseHMW","MedicationDispenseHMW.dosageInstruction","MedicationDispenseHMW.dosageInstruction","","","",0,1,"","","","Dosage {[]} {[]}
+","The instructions for using the product","The instructions for using the product","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.dosageInstruction",0,1,"",""
+"MedicationDispenseHMW","MedicationDispenseHMW.note","MedicationDispenseHMW.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Additional information about the dispensed product","Additional information about the dispensed product","","","","","","","","","",,,,,"",,,,"MedicationDispenseHMW.note",0,*,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP","MedicationDispenseIHEPWP","","","",0,*,"","","","null {[]} {[]}
+","[IHE PHARM White Paper] Logical Model for medication dispense","A medication dispense relates to zero or one prescription item of one prescription. There are cases when a medication is dispensed before the prescription is created. Medications dispensed outside the context of any prescription are considered as self-prescribed by the professional who dispenses. Thus they are still attached to a pseudo-prescription. A medication dispense is issued by one pharmacy staff. It is related to zero (community use case) or one (hospital use case) encounter of care.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.dispenseID","MedicationDispenseIHEPWP.dispenseID","","","",0,1,"","","","Identifier {[]} {[]}
+","Pharmaceutical advice ID","Pharmaceutical advice ID","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.dispenseID",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.refillnumber","MedicationDispenseIHEPWP.refillnumber","","","",0,1,"","","","string {[]} {[]}
+","refill number","refill number","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.refillnumber",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.date","MedicationDispenseIHEPWP.date","","","",0,1,"","","","dateTime {[]} {[]}
+","Date/Time of dispense","Date/Time of dispense","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.date",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.location","MedicationDispenseIHEPWP.location","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.location",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.patient","MedicationDispenseIHEPWP.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","The person for which the medication is prescribed.","The person for which the medication is prescribed.","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.patient",1,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.expectedQuantity","MedicationDispenseIHEPWP.expectedQuantity","","","",0,1,"","","","integer {[]} {[]}
+","Expected quantity (number of packs/number of units)","Expected quantity (number of packs/number of units)","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.expectedQuantity",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.quantityDelivered","MedicationDispenseIHEPWP.quantityDelivered","","","",0,1,"","","","integer {[]} {[]}
+","Quantity delivered (number of packs/number of units)","Quantity delivered (number of packs/number of units)","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.quantityDelivered",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.dispensingperiod","MedicationDispenseIHEPWP.dispensingperiod","","","",0,1,"","","","Period {[]} {[]}
+","Dispensing period (period for which the medication is dispensed)","Dispensing period (period for which the medication is dispensed)","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.dispensingperiod",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.dispensingPresentation","MedicationDispenseIHEPWP.dispensingPresentation","","","",0,1,"","","","string {[]} {[]}
+","Dispensing presentation: blister, box, single dose unit","Dispensing presentation: blister, box, single dose unit","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.dispensingPresentation",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.deliveryMode","MedicationDispenseIHEPWP.deliveryMode","","","",0,1,"","","","string {[]} {[]}
+","Delivery mode : bulk, nominative (per patient)"," Delivery mode : bulk, nominative (per patient)","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.deliveryMode",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.batchNumber","MedicationDispenseIHEPWP.batchNumber","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.batchNumber",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.expirationDate","MedicationDispenseIHEPWP.expirationDate","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.expirationDate",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.pharmaceuticalInstructions","MedicationDispenseIHEPWP.pharmaceuticalInstructions","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.pharmaceuticalInstructions",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.pricepaidbypatient","MedicationDispenseIHEPWP.pricepaidbypatient","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.pricepaidbypatient",0,1,"",""
+"MedicationDispenseIHEPWP","MedicationDispenseIHEPWP.pharmacist","MedicationDispenseIHEPWP.pharmacist","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MedicationDispenseIHEPWP.pharmacist",0,1,"",""
+"untyped","Element","Element","","","",0,*,"","","","","No specific data type assigned","No specific data type assigned","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
 ",""
-"CD","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
+"untyped","Element.id","Element.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"CD","Element.extension","Element.extension","","extensions
+"untyped","Element.extension","Element.extension","","extensions
 user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

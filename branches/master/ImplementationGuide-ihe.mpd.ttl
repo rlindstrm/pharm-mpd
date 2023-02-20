@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "IHE_MPD"]; # 
   fhir:ImplementationGuide.title [ fhir:value "Medication Prescription and Delivery (MPD)"]; # 
   fhir:ImplementationGuide.status [ fhir:value "active"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-04T16:53:50+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-20T20:06:00+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Integrating the Healthcare Enterprise (IHE)"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -682,14 +682,70 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/AD>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/AD" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Address" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ANY>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ANY" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ANY" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An abstract type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/BL>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Boolean - true or false" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/CD>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/CD" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CD" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Concept descriptor" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ConceptDescriptor" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/Class>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Class" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Class" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Class of data elements" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -703,7 +759,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Date" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/EN>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/EN" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EN" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EntityName" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -714,10 +784,38 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/II" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "II" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Instance Identifier" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "InstanceIdentifier" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/INT>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/INT" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "INT" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "IntegerNumber" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PQ>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PQ" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PQ" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PhysicalQuantity" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -731,7 +829,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Quantity" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/REAL>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/REAL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "REAL" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "RealNumber" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/RTO>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/RTO" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RTO" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ratio" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -742,10 +868,10 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/ST" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ST" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "String" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CharacterString" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -756,38 +882,37 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/TS" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TS" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Time stamp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "TimeStamp" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/class>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/class" ]
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/Untyped>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Untyped" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "class" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Class of data elements" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/untyped>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/untyped" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "untyped" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Untyped" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "No data type defined" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/CommonPrescription>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CommonPrescription" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ePrescription" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -801,7 +926,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "[HMW] Logical Model for administration" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -815,7 +940,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical Model for administration" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -829,7 +954,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "[HMW] Logical Model for dispense" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -843,7 +968,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A medication dispense relates to zero or one prescription item of one prescription. There are cases when a medication is dispensed before the prescription is created. Medications dispensed outside the context of any prescription are considered as self-prescribed by the professional who dispenses. Thus they are still attached to a pseudo-prescription. A medication dispense is issued by one pharmacy staff. It is related to zero (community use case) or one (hospital use case) encounter of care." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -857,7 +982,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A medication dispense relates to zero or one prescription item of one prescription. There are cases when a medication is dispensed before the prescription is created. Medications dispensed outside the context of any prescription are considered as self-prescribed by the professional who dispenses. Thus they are still attached to a pseudo-prescription. A medication dispense is issued by one pharmacy staff. It is related to zero (community use case) or one (hospital use case) encounter of care." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -871,7 +996,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "[HMW] Logical Model for medication order" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -885,7 +1010,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -899,7 +1024,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A prescription is issued by one ordering healthcare professional for one patient, in the context of zero or one encounter (between the patient and the ordering physician and/or the healthcare institution)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -913,7 +1038,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "[HMW] Logical Model for Pharmaceutical Advice" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -927,7 +1052,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pharmaceutical advice relates to one or more prescription items of one prescription. It is issued by one pharmacist. It may be associated with one or more observations." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -941,17 +1066,31 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pharmaceutical advice relates to one or more prescription items of one prescription. It is issued by one pharmacist. It may be associated with one or more observations." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/ePrescription>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ePrescription" ]
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/PrescribedProductModel>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PrescribedProductModel" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ePrescription" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DRAFT: Medicinal Product in eP/eD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DRAFT. eP/eD/PS medicinal product as a implementation-agnostic logical model" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/PHARM/ihe.pharm.mpd/StructureDefinition/eHDSIePrescription>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/eHDSIePrescription" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "eHDSI ePrescription" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

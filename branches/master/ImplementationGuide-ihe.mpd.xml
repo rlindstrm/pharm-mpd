@@ -11,7 +11,7 @@
   <name value="IHE_MPD"/>
   <title value="Medication Prescription and Delivery (MPD)"/>
   <status value="active"/>
-  <date value="2023-02-04T16:53:50+00:00"/>
+  <date value="2023-02-20T20:06:00+00:00"/>
   <publisher value="Integrating the Healthcare Enterprise (IHE)"/>
   <contact>
     <name value="Integrating the Healthcare Enterprise (IHE)"/>
@@ -457,10 +457,54 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/AD"/>
+      </reference>
+      <name value="AD"/>
+      <description value="Address"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ANY"/>
+      </reference>
+      <name value="ANY"/>
+      <description value="An abstract type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BL"/>
+      </reference>
+      <name value="BL"/>
+      <description value="Boolean - true or false"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/CD"/>
       </reference>
       <name value="CD"/>
-      <description value="Concept descriptor"/>
+      <description value="ConceptDescriptor"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Class"/>
+      </reference>
+      <name value="Class"/>
+      <description value="Class of data elements"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -479,10 +523,43 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/EN"/>
+      </reference>
+      <name value="EN"/>
+      <description value="EntityName"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/II"/>
       </reference>
       <name value="II"/>
-      <description value="Instance Identifier"/>
+      <description value="InstanceIdentifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/INT"/>
+      </reference>
+      <name value="INT"/>
+      <description value="IntegerNumber"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PQ"/>
+      </reference>
+      <name value="PQ"/>
+      <description value="PhysicalQuantity"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -501,10 +578,32 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/REAL"/>
+      </reference>
+      <name value="REAL"/>
+      <description value="RealNumber"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RTO"/>
+      </reference>
+      <name value="RTO"/>
+      <description value="Ratio"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ST"/>
       </reference>
       <name value="ST"/>
-      <description value="String"/>
+      <description value="CharacterString"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -515,7 +614,7 @@
         <reference value="StructureDefinition/TS"/>
       </reference>
       <name value="TS"/>
-      <description value="Time stamp"/>
+      <description value="TimeStamp"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -523,21 +622,20 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/class"/>
+        <reference value="StructureDefinition/Untyped"/>
       </reference>
-      <name value="class"/>
-      <description value="Class of data elements"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/untyped"/>
-      </reference>
-      <name value="untyped"/>
+      <name value="Untyped"/>
       <description value="No data type defined"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CommonPrescription"/>
+      </reference>
+      <name value="ePrescription"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -666,9 +764,20 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ePrescription"/>
+        <reference value="StructureDefinition/PrescribedProductModel"/>
       </reference>
-      <name value="ePrescription"/>
+      <name value="DRAFT: Medicinal Product in eP/eD"/>
+      <description value="DRAFT. eP/eD/PS medicinal product as a implementation-agnostic logical model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eHDSIePrescription"/>
+      </reference>
+      <name value="eHDSI ePrescription"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

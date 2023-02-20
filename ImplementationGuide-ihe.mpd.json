@@ -10,7 +10,7 @@
   "name" : "IHE_MPD",
   "title" : "Medication Prescription and Delivery (MPD)",
   "status" : "active",
-  "date" : "2023-02-19T14:45:07+00:00",
+  "date" : "2023-02-20T20:06:00+00:00",
   "publisher" : "Integrating the Healthcare Enterprise (IHE)",
   "contact" : [{
     "name" : "Integrating the Healthcare Enterprise (IHE)",
@@ -609,10 +609,58 @@
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/AD"
+      },
+      "name" : "AD",
+      "description" : "Address",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ANY"
+      },
+      "name" : "ANY",
+      "description" : "An abstract type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BL"
+      },
+      "name" : "BL",
+      "description" : "Boolean - true or false",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/CD"
       },
       "name" : "CD",
-      "description" : "Concept descriptor",
+      "description" : "ConceptDescriptor",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Class"
+      },
+      "name" : "Class",
+      "description" : "Class of data elements",
       "exampleBoolean" : false
     },
     {
@@ -633,10 +681,46 @@
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/EN"
+      },
+      "name" : "EN",
+      "description" : "EntityName",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/II"
       },
       "name" : "II",
-      "description" : "Instance Identifier",
+      "description" : "InstanceIdentifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/INT"
+      },
+      "name" : "INT",
+      "description" : "IntegerNumber",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PQ"
+      },
+      "name" : "PQ",
+      "description" : "PhysicalQuantity",
       "exampleBoolean" : false
     },
     {
@@ -657,10 +741,34 @@
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/REAL"
+      },
+      "name" : "REAL",
+      "description" : "RealNumber",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RTO"
+      },
+      "name" : "RTO",
+      "description" : "Ratio",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ST"
       },
       "name" : "ST",
-      "description" : "String",
+      "description" : "CharacterString",
       "exampleBoolean" : false
     },
     {
@@ -672,7 +780,7 @@
         "reference" : "StructureDefinition/TS"
       },
       "name" : "TS",
-      "description" : "Time stamp",
+      "description" : "TimeStamp",
       "exampleBoolean" : false
     },
     {
@@ -681,22 +789,21 @@
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/class"
+        "reference" : "StructureDefinition/Untyped"
       },
-      "name" : "class",
-      "description" : "Class of data elements",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/untyped"
-      },
-      "name" : "untyped",
+      "name" : "Untyped",
       "description" : "No data type defined",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CommonPrescription"
+      },
+      "name" : "ePrescription",
       "exampleBoolean" : false
     },
     {
@@ -837,9 +944,21 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ePrescription"
+        "reference" : "StructureDefinition/PrescribedProductModel"
       },
-      "name" : "ePrescription",
+      "name" : "DRAFT: Medicinal Product in eP/eD",
+      "description" : "DRAFT. eP/eD/PS medicinal product as a implementation-agnostic logical model",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eHDSIePrescription"
+      },
+      "name" : "eHDSI ePrescription",
       "exampleBoolean" : false
     }],
     "page" : {
